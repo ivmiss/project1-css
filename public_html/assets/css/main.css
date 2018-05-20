@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+#sitting-order {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sitting-order tr td {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+/*#sitting-order td.dard {
+    background-color: #aaa;
+}
+
+#sitting-order tr.drugi td:nth-child(2n) {
+    background-color: #ffcccc;
+}
+
+#sitting-order tr.prvi:nth-child(-2n+8) {
+    background-color: #ffcccc;
+}
+
+tfoot td.poseban:nth-child(4n){
+    background-color: #ffcccc;
+    border: 3px solid black;
+}*/
+
+
+#sitting-order tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: sandybrown;
+}
+
+#sitting-order tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: sandybrown;
+}
+
+#sitting-order tfoot td {
+    background-color: white;
+    border: white;
+}
+
+#sitting-order tfoot .teacher {
+    background-color: sandybrown;
+    border: 1px solid black;
+}
+
+#sitting-order tbody tr:nth-child(even) td:nth-child(3n) {
+    background-color: white;
+    border: white;
+}
+
+#sitting-order tbody tr:nth-child(odd) td:nth-child(3n) {
+    background-color: white;
+    border: white;
+}
+
+
+#students-list {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+#students-list thead {
+    padding: 5px;
+    text-align: left;
+}
+
+#students-list thead tr th{
+    padding: 5px;
+    text-align: left;
+    border-top: 4px double #888;
+    border-bottom: 4px double #888;
+}
+
+#students-list tbody tr {
+  border-bottom: 1px solid #888;
+}
+
+#students-list tbody tr:last-child {
+    border-bottom:4px double #888;
+}
+
+#students-list tbody tr:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.news {
+    width: 600px;
+    line-height: 20px;
+    padding: 10px;
+    background: linear-gradient(#fff,#eee);
+}
+
+.news .title a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #159;
+}
+
+.news .description {
+    color: #333;
+}
+
+.news .time {
+    margin: 0px;
+    color: #aaa;
+    text-align: right;
+}
+
+.advertising {
+    width: 400px;
+    margin: 20px;
+}
+
+.advertising .title a {
+    font-size: 12px;
+    color: #395;
+}
+
+.advertising .description {
+    color: #555;
+    font-size: 11px;
+}
